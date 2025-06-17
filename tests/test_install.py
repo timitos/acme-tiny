@@ -19,7 +19,7 @@ class TestInstall(unittest.TestCase):
         return os.path.join(self.tempdir, "bin", cmd)
 
     def test_install(self):
-        subprocess.check_call([self.virtualenv_bin("python"), "setup.py", "install"])
+        subprocess.check_call([self.virtualenv_bin("pip"), "install", "."])
 
     def test_cli(self):
         self.test_install()
