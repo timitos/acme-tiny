@@ -8,14 +8,6 @@ jobs:
       matrix:
         include:
 
-          - test-name: ubuntu-22.04-python-3.7
-            os: ubuntu-22.04
-            python-version: "3.7"
-
-          - test-name: ubuntu-22.04-python-3.8
-            os: ubuntu-22.04
-            python-version: "3.8"
-
           - test-name: ubuntu-22.04-python-3.9
             os: ubuntu-22.04
             python-version: "3.9"
