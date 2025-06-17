@@ -5,6 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "acme-tiny"
 version = "5.0.2"
+requires-python = ">=3.7,>=2.7"
 dependencies = []
 authors = [
     {name = "Daniel Roesler", email = "diafygi@gmail.com"},
@@ -14,7 +15,6 @@ maintainers = [
 ]
 description = "A tiny script to issue and renew TLS certs from Let's Encrypt"
 readme = "README.md"
-license = "MIT"
 license-files = ["LICENSE"]
 classifiers = [
     'Development Status :: 5 - Production/Stable',
