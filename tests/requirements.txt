@@ -1,1 +1,2 @@
 coverage
+virtualenv ; python_version <= "2"

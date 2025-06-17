@@ -1,5 +1,6 @@
 import unittest
 import os
+import sys
 import tempfile
 import shutil
 import subprocess
@@ -8,7 +9,8 @@ import subprocess
 class TestInstall(unittest.TestCase):
     def setUp(self):
         self.tempdir = tempfile.mkdtemp()
-        subprocess.check_call(["virtualenv", self.tempdir])
+        venv_cmd = ["virtualenv"] if sys.version_info[0] == 2 else ["python", "-m", "venv"]
+        subprocess.check_call(venv_cmd + [self.tempdir])
 
     def tearDown(self):
         shutil.rmtree(self.tempdir)
