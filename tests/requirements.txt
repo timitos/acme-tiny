@@ -1,2 +1,3 @@
 coverage
+setuptools
 virtualenv ; python_version <= "2"
